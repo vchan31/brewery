@@ -16,6 +16,8 @@ componentDidMount(){
 	})
 }
 
+
+
 	render (){
 		// console.log(this.state.breweries)
 		return(
@@ -23,7 +25,7 @@ componentDidMount(){
 			<h1>Brewery Searcher</h1>
 			<br/>
 			<br/>
-			<BreweryList breweries={this.state.breweries}/>
+			<BreweryList breweries={this.state.breweries} handleOnClick={this.handleOnClick}/>
 			</div>
 
 			)
